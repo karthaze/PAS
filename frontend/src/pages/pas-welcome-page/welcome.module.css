@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
+  url('./../../assets/backgroun1.png') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f0f0f0;
+  padding: 1rem;
+}
+
+.glassBox {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #00ffc3, #1db954);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.primary {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  background: linear-gradient(135deg, #00ffc3, #1db954);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffc3;
+}
+
+.secondary {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #333;
+  color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary:hover {
+  background-color: #1c1c1c;
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.googleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .googleButton {
+    background: white;
+    color: #1c1c1e;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .googleButton:hover {
+    transform: scale(1.03);
+    background-color: #f2f2f2;
+  }
+  
+  .googleIcon {
+    height: 20px;
+  }
+  .authButton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .authButton:hover {
+    transform: scale(1.03);
+  }
+  
+  .authButton img {
+    width: 24px;
+    height: 24px;
+  }
+  

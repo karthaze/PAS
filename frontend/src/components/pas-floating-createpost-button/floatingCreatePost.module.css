@@ -1,0 +1,24 @@
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #00ffe1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1000;
+  }
+  
+  .fab:hover {
+    transform: scale(1.1);
+  }
+  
